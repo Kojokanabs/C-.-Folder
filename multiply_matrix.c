@@ -35,12 +35,16 @@ int main(void)
         for(j = 0; j < q; j++)
         {
             printf("%d\t", b[i][j]);
-        }
+        } 
         printf("\n");
     }
-    if (n!= q)
-        printf("Can't print");
+
+    if (n!= p)
+    {
+        printf("Can not multiply");
+    }
     else
+    {
     for(i = 0; i < 3; i++)
     {
         for(j = 0; j < 2; j++)
@@ -52,9 +56,8 @@ int main(void)
             }
             c[i][j] = sum;
         }
-            //printf("\n");
     }
-    printf("Multiplication of matrix:\n");
+    printf("Multiplication of matrix is:\n");
     for(i = 0; i < 3; i++)
     {
         for(j = 0; j < 2; j++)
@@ -62,7 +65,7 @@ int main(void)
             printf("%d\t", c[i][j]);
         }
         printf("\n");
-                
     }
     return (0);
+}
 }
